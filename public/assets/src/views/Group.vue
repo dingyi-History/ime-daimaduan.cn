@@ -1,3 +1,3 @@
 <template>
-    bar is me oo 
+    标签群页面
 </template>

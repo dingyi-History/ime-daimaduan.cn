@@ -17,6 +17,13 @@ module.exports = {
                 // edit this for additional asset file types
                 test: /\.(png|jpg|gif)$/,
                 loader: 'file?name=[name].[ext]?[hash]'
+            },
+            {
+                test: /\.js$/,
+                // excluding some local linked packages.
+                // for normal use cases only node_modules is needed.
+                exclude: /node_modules|vue\/dist|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
+                loader: 'babel'
             }
         ]
     },

@@ -10,7 +10,8 @@
 ├── src                // 生产目录
 │   ├── assets         // css js 和图片资源
 │   ├── components     // 各种组件
-│   ├── views          // 各种页面
+│   ├── libs          // 第三方类库 
+│   ├── views          // 各种页面 
 │   ├── filters.js     // 各种过滤器
 │   └── main.js        // Webpack 预编译入口
 ├── server.js          // webpack-dev-server服务配置

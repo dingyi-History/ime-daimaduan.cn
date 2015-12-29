@@ -1,3 +1,3 @@
 <template>
-    foo is me
+    问答板块
 </template>
