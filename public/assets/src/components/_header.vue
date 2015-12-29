@@ -12,9 +12,6 @@ div.nav
     li
       a(v-link="{ path: '/qa' }")
         问答
-    li
-      a(v-link="{ path: '/sign' }")
-        注册|登录
     li 
       p daimaduan.cn   
 </template>

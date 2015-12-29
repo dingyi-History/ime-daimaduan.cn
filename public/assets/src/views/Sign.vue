@@ -1,70 +1,62 @@
 <template lang="jade">
 div.content
-  div.form
+  div.form.col-md-6.col-md-offset-3.text-center
     div.title  
       h1 代码段
-        small | 即时问答社区
-      hr
-      h2 daimaduan.cn    
-    form
-      input
-      br  
-      input 
-      br 
-      a.btn  注册  
-      a.btn  登录
+      h2 daimaduan.cn | 即时问答社区  
+    h4.change
+      span
+        a(v-link="{ path: '/sign', exact: true }") 登录
+        b ·
+        a(v-link="{ path: '/sign/signup', exact: true }") 注册
+
+    router-view(
+      class="view"
+      keep-alive
+      transition
+      transition-mode="out-in")    
+
 </template>
+<script>
+</script>
 
 <style lang="stylus">
-percent-15 = 15%
-percent-10 = 10%
-hover-color = #e66
-font-h1 = 28px
-b-radius = 4px
-input-width = 300px
-color-00b388 = #00b388
-color-white = #FFF
-nav-back = #494646
-
+color-e66 = #e66
 .content
-  background nav-back
-  position cover
   .form
-    margin percent-10  auto
-    border-radius b-radius
-    padding 50px
-    width 50%
-    background rgba(255,255,255,0.6)
-
-    .title
-      text-aligin center
-
+    margin-top 10%
     h1
-      text-align center
-      font-size font-h1
-      margin-bottom 10px
-
+      font-size 48px
+      color color-e66
     h2
-      text-align center
-      margin-top 10px
-      margin-bottom 20px
+      font-size 20px  
+      color color-e66
+    
+    .change
+      font-size 20px
+      border-bottom 1px solid #eee
+      color #b1b1b1
+      margin-top 50px
+      span
+        position relative
+        top 10px
+        padding 0 30px
+        background #fff
+        a
+          color #b1b1b1
+          text-decoration none
+        .v-link-active
+          color #555555
+        b
+          margin 0 10px  
     form
-      text-align center    
+      margin-top 20px        
       input
-        width input-width
-        height 30px
-        border-radius b-radius
-        border 1px solid #EEE
-        margin-bottom 10px
-      .btn
-        display inline-block
-        width 50px
-        padding 10px
-        background color-00b388
-        border-radius b-radius
-        margin-left 10px
-        color color-white
-        &:hover
-          box-shadow 0 0 1px 1px #eee
+        margin-top 10px  
+      p
+        color #b1b1b1
+        font-size 14px
+        margin-top 5px  
+
           
 </style>

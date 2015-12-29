@@ -1,6 +1,6 @@
 <template lang='jade'>  
-div.top       
-  top
+topnav  
+leftnav
 
 div.main
   router-view(
@@ -13,7 +13,8 @@ div.main
 <script>
 export default {
     components:{
-            "top":require('../components/_header.vue'),
+            "topnav":require('../components/_topnav.vue'),
+            "leftnav":require('../components/_header.vue'),
             "bottom":require('../components/_footer.vue')
         }
 }
@@ -21,6 +22,7 @@ export default {
 </script>
 
 <style lang="stylus">
+@import '../assets/bootstrap.min.css'
 *
   margin 0
   padding 0
