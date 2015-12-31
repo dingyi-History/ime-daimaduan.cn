@@ -1,4 +1,5 @@
 <template lang="jade">
+title
 div.card-deck-wrapper
   div.card-deck.col-md-3
     div.card
@@ -7,7 +8,13 @@ div.card-deck-wrapper
         h4.card-title 标签名
         p.card-text  200/1000      
 </template>
-
+<script>
+export default{
+  components : {
+    "title" : require("../components/common/_title.vue")
+  }
+}  
+</script>
 <style lang="stylus">
 .card-deck-wrapper
   .card-deck
