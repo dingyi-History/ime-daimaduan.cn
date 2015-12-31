@@ -17,18 +17,15 @@ export default {
             "leftnav":require('../components/_header.vue'),
             "bottom":require('../components/_footer.vue')
         }
-}
-  
+} 
 </script>
 
 <style lang="stylus">
 @import '../assets/bootstrap.min.css'
-*
-  margin 0
-  padding 0
-
 .main
-  margin-left 150px
   padding 5px
 
+@media screen and (min-width: 48em)
+  .main
+    margin-left 150px
 </style>

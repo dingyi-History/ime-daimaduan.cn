@@ -1,5 +1,6 @@
 <template lang='jade'>
-div.nav
+  
+div.nav.hidden-sm-down
   ul
     li
       img(src="/dist/logo.png")
@@ -16,6 +17,16 @@ div.nav
       p daimaduan.cn   
 </template>
 
+<script>
+import { aside } from 'vue-strap'
+  export default{
+    components : {
+      "siderbar" : aside
+    }
+  }
+</script>
+
+
 <style lang="stylus">
 nav-back = #494646
 color-white = #FFF
@@ -23,7 +34,7 @@ font-20 = 20px
 hover-color = #e66
 b-radius = 3px
 
-
+/*大屏幕下的侧边栏 */
 .nav
   width 150px
   background nav-back 
@@ -33,6 +44,7 @@ b-radius = 3px
   bottom 0
 
   ul
+    padding 0
     li
       display block
       line-height 50px

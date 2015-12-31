@@ -18,6 +18,7 @@ div.content
 
 </template>
 <script>
+
 </script>
 
 <style lang="stylus">
@@ -56,7 +57,5 @@ color-e66 = #e66
       p
         color #b1b1b1
         font-size 14px
-        margin-top 5px  
-
-          
+        margin-top 5px     
 </style>

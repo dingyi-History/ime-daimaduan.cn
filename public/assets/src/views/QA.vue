@@ -1,11 +1,47 @@
-<template>
-   <div class="jumbotron">
-  <h1 class="display-3">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="m-y-md">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+<template lang="jade">
+div.index.col-md-6
+  h2 最新问答
+  div.title
+  card
+  card
+  card
+  card
+  card 
+  card
+  card
+  card
+  card
+  card
+div.side.col-md-6
+  h2 精彩即将呈现   
+  hr
+  small coming soon  
 </template>
+<script>
+export default{
+    components : {
+        "card" : require("../components/index/_card.vue")
+    }
+}
+</script>
+
+<style lang="stylus">
+.index
+  padding-top 20px
+  border-right 1px solid #eee
+  min-height 100%
+  h2
+    font-size 20px  
+    padding-right 20px
+    background #fff
+    display inline-block  
+  .title
+    border-bottom 1px solid #eee
+    margin-top -15px
+
+.side
+  text-align center
+  margin-top 300px
+  h2
+    font-size 20px
+</style>

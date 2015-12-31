@@ -1,5 +1,5 @@
 <template lang="jade">
-div.topnav
+div.topnav.hidden-sm-down
   form.form-inline(action="/xx.html",method="post")
     div.form-group
       input.form-control.form-control-sm(type="text",placeholder="搜索")
@@ -10,7 +10,7 @@ div.topnav
 
 <style lang="stylus">
 .topnav
-  width 278px
+  width 300px
   position fixed
   top 10px
   right 10px 
@@ -22,5 +22,5 @@ div.topnav
   .btn-primary
     border-radius 0 
   .btn-success
-    border-radius 0 20px 20px 0       
+    border-radius 0 20px 20px 0     
 </style>
