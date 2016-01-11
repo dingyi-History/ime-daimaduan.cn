@@ -1,6 +1,9 @@
 <template lang="jade">
 div.index.col-md-6
   h2 最新动态
+  h1 xxx
+  p xxx
+  h1 xxx
   div.title
   card
   card

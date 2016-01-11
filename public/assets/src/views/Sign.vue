@@ -26,12 +26,14 @@ color-e66 = #e66
 .content
   .form
     margin-top 10%
-    h1
-      font-size 48px
-      color color-e66
-    h2
-      font-size 20px  
-      color color-e66
+    .title
+      border-bottom none
+      h1
+        font-size 48px
+        color color-e66
+      h2
+        font-size 20px  
+        color color-e66
     
     .change
       font-size 20px
